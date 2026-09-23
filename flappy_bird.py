@@ -1,9 +1,12 @@
 # start modules
-
+import pgzrun
 # create constants
 
 # print welcome
-
+print("The game is about to start!")
+print("click teh mouse to 'flap' upwards")
+print("dodge the pipes and the floor")
+print("good luck and have fun!")
 # make background
 
 # make bird
@@ -29,3 +32,4 @@
 # moving
 
 # runs everything
+pgzrun.go()
