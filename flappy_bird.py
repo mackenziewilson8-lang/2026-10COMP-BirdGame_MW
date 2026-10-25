@@ -63,6 +63,9 @@ def draw():
     bird.draw()
 
 # draw pipetop
+    for topPipe1 in pipes:
+        topPipe1.x = topPipe1.x - 2
+
     topPipe1.draw()
     topPipe2.draw()
     topPipe3.draw()
@@ -78,9 +81,9 @@ def update():
     topPipe1.x = topPipe1.x - 1
     topPipe2.x = topPipe2.x - 1
     topPipe3.x = topPipe3.x - 1
-    bottompipe1.x = bottompipe1.x -1
-    bottompipe2.x = bottompipe2.x -1
-    bottompipe3.x = bottompipe3.x -1
+    bottompipe1.x = bottompipe1.x - 1
+    bottompipe2.x = bottompipe2.x - 1
+    bottompipe3.x = bottompipe3.x - 1
     # bird hits bottom of screen
     if bird.y > 600:
         print("Game over!")
